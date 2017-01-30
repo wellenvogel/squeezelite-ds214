@@ -10,9 +10,10 @@ You have to install some ipkg before - for set up instructions refer to http://w
 
 You need to install:
 
-`ipkg install alsa-tools
-
-ipkg install mp123`
+```shell
+ipkg install alsa-tools
+ipkg install mp123
+```
 
 Afterwards copy (as root) the binary to /opt/bin and download the S99squeezelite to /opt/etc/init.d.
 
