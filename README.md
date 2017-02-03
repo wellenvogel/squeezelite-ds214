@@ -24,3 +24,8 @@ You can start it using /opt/etc/init.d/S99squeezelite start.
 Your logitech server should display a ds214 play entry.
 
 If necessary you can adapt the name inside the script or tune the output and buffering parameters.
+If you want to run it together with ShairpointSync, just put the .asoundrc at /root of the ds (and potentially restart ShairpointSync)
+This will set up alsa to use dmixer by default thus allowing for multiple apps at the same time.
+When you use DSAudio you should not directly select USB speakers but use the entry ds214 play that is provided via the logitech server 
+(so you finally play via squeezelite).
+As DSAudio is using pulse audio, this does not easily work with squeezelite (as it claims the audio device as long as it it running).
